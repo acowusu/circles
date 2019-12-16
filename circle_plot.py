@@ -15,7 +15,7 @@ import math  # to calculate the euclidean distance of the circles
 """# step two define some helper functions to calculate the intersections and concentricity"""
 
 def isconcentric(x1,y1,x2,y2):
-  return x1==x2 & y1==y2 # concentric circles have the same x and y coordinates for their centers
+  return x1==x2 and y1==y2 # concentric circles have the same x and y coordinates for their centers
 
 def intersections(x1,y1, r1,x2,y2,r2):
   distance = math.sqrt( (x1-x2)**2 + (y1-y2)**2)  # calculate the eucledean distance from their centers using pythagoras's theorem
